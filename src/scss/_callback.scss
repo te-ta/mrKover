@@ -1,0 +1,119 @@
+.form {
+
+  &__container {
+    position: fixed;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: $opacity-main;
+    z-index: 1000;
+    }
+
+  &__container_close {
+    font-family: $title-big;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    font-size: 50px;
+    line-height: 40px;
+    color: $color-main;
+  }
+
+  &__container_close:hover {
+    border: none;
+    color: $color-second;
+    cursor: pointer;
+  }
+
+  &__container_close:active {
+    opacity: 0.7;
+  }
+
+  &__btn {
+    margin-bottom: 8px;
+    font-family: $text;
+    font-size: inherit;
+    text-transform: uppercase;
+    color: inherit;
+    cursor: pointer;
+  }
+}
+
+.callback {
+
+  &__wrapper {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 42px;
+    background-color: $color-white;
+    text-align: center;
+    font-size: 14px;
+    
+    @include under540 {
+      max-width: 100%;
+    }
+
+    @include xsHeight {
+      padding: 42px 24px 24px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 42px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase; 
+
+    @include xsHeight {
+      margin-bottom: 18px;
+      font-size: 20px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-family: $text;
+    background-color: $color-white;
+    border: none;
+    border-bottom: 1px solid $opacity-main;
+    color: $color-main;
+    -webkit-appearance: none;
+      -moz-appearance: none;
+          appearance: none;
+
+    @include xsHeight {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+  }
+
+  &__input:-webkit-autofill,
+  &__input:-webkit-autofill:hover, 
+  &__input:-webkit-autofill:focus, 
+  &__input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+  } 
+  &__input:-webkit-autofill {
+    -webkit-text-fill-color: $color-main !important;
+  }
+}
+
+.dont-move {
+  overflow: hidden;
+}
+
+.error {
+  background-color: $opacity-red !important;
+}
+
+.done-msg {
+  margin: 85px 0;
+  font-size: 30px;
+  line-height: 2;
+}

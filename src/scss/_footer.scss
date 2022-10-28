@@ -1,0 +1,69 @@
+.footer { 
+  position: relative;
+  margin-top: 96px;
+  padding: 64px 0;
+  background-color: $color-dark;
+
+  &__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: $color-white;
+
+    @include under640 {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+    }
+  }
+
+  &__list {
+    width: 180px;
+    font-size: 18px;
+
+    @include under640 {
+      width: auto;
+    }
+  }
+
+  &__contacts {
+    font-size: 24px;
+    text-align: right;
+
+    @include under540 {
+      font-size: 20px;
+    }
+	}
+
+  &__tel {
+    margin-bottom: 4px;
+  }
+
+  &__btn {
+    border-color: $light-gray;
+    color: $color-white;
+
+    @include under640 {
+      margin-top: 32px;
+    }
+  }
+
+  &__email {
+    display: block;
+    margin-top: 16px;
+    font-size: 24px;
+  }
+
+  &__copyright {
+    position: absolute;
+    bottom: 16px;
+		width: 100%;
+    text-align: center;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,69 @@
+.first {
+  
+  background: $color-gray url(../img/background.jpg) center 70% no-repeat;
+  background-size: cover;
+
+	&__container {
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;  
+  }
+  
+  
+
+	&__right {
+    background-color: $opacity-main;  
+
+    @include under540 {
+      width: 50%;
+      min-height: 450px;
+    }
+	}
+
+	&__box {
+    margin: 160px 0 160px -180px;
+
+    @include under640 {
+      margin: 96px 16px 96px -190px;
+    }
+
+    @include under540 {
+      position: absolute;
+      right: 0;
+      margin: 80px 16px;
+    }
+	}
+
+	&__subtitle {
+    font-family: $title-big;
+    font-weight: 400;
+    text-transform: uppercase;
+	}
+
+	&__title {
+    margin-left: -7px;
+    font-family: $title-big;
+    font-size: 108px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    @include under640 {
+      font-size: 80px;
+    }
+
+    @include under540 {
+      font-size: 56px;
+    }
+	}
+
+	&__desc {
+    font-family: $title;
+    font-size: 18px;
+    font-weight: normal;
+
+    @include under540 {
+      font-size: 16px;
+    }
+	}
+}

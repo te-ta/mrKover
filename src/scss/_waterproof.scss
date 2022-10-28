@@ -1,0 +1,288 @@
+.waterproof {
+  margin-top: 96px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+  &__heading-wrap {
+    border-top: 8px solid $color-main;
+
+    @include under540 {
+      margin-left: 100px;
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    padding: 8px 8px 0 0;   
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $color-main;
+
+    @include under540 {
+      padding-right: 8px;
+      font-size: 18px;
+    }
+  }
+
+  &__container {
+    margin-top: 32px;
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__item {
+    @include under740 {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__img {
+    position: relative;
+    min-height: 470px;
+
+    @include under740 {
+      margin: 0;
+      width: 100%;
+      min-height: 300px;
+    }
+  }
+
+  &__desc {
+    padding: 16px 0 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    font-size: inherit;
+    
+    @include under740 {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  &__title { 
+    font-family: $title;
+    font-size: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+
+  &__list {
+    margin: 12px 0;
+    list-style-type: none;
+  }
+
+  &__point {
+    margin: 4px 0;
+    list-style-type: none;
+  }
+
+  &__point-row {
+    display: inline;
+    margin-right: 24px;
+  }
+
+  &__ico {
+    margin-right: 58px;
+    border-color: $color-gray;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    -webkit-transition: border-color 0.8s, color 0.8s, background-image 0.8s;
+    -o-transition: border-color 0.8s, color 0.8s, background-image 0.8s;
+    transition: border-color 0.8s, color 0.8s, background-image 0.8s; 
+
+    @include under980 {
+      margin-right: 30%;
+    }
+
+    @include under740 {
+      margin-right: 58px;
+    }
+  }
+
+  &__ico-wrap {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+    @include under980 {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+    }
+  }
+
+  &__ico:nth-child(1),
+  &__ico:nth-child(2) {
+    @include under980 {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__ico:hover,
+  &__ico:focus,
+  &__ico--active {
+    border-color: $color-second;
+    color: $color-second;
+    -webkit-transition: border-color 0.8s, color 0.8s, background-image 0.8s;
+    -o-transition: border-color 0.8s, color 0.8s, background-image 0.8s;
+    transition: border-color 0.8s, color 0.8s, background-image 0.8s;
+  }
+
+  &__text {
+    width: 100%;
+    
+    @include under740 {
+      min-height: 300px;
+    }
+  }
+
+  &__size {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 48px;
+  }
+
+  &__size > li {
+    width: 40%;
+  }
+
+  &__size > li:nth-child(1),
+  &__size > li:nth-last-child(1) {
+    margin: 8px 0;
+    width: 100%;
+  }
+
+  &__color {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -2px;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  &__color > li {
+    position: relative;
+    margin: 1px;
+    background: #ccc center no-repeat;
+    width: 16%;
+    height: 30px;
+  }
+
+  &__color-big {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 94px;
+    z-index: 10;
+    opacity: 0;
+  }
+
+  &__color > li:hover &__color-big { 
+    opacity: 1;
+    -webkit-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+  }
+
+  &__color-big p {
+    background-color: $opacity-white;
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+  }
+
+}
+
+.ico-order {
+  background: url(../img/ico/order.png) center no-repeat;
+}
+.ico-order:hover {
+  background-image: url(../img/ico/order-.png);
+}
+
+.ico-size {
+  background: url(../img/ico/size.png) center no-repeat;
+}
+
+.ico-size:hover,
+.waterproof__ico--active {
+  background-image: url(../img/ico/size-.png);
+}
+
+.ico-color {
+  background: url(../img/ico/color.png) center no-repeat;
+}
+
+.ico-color:hover,
+.waterproof__ico--active {
+  background-image: url(../img/ico/color-.png);
+}
+
+.ico-video {
+  background: url(../img/ico/video.png) center no-repeat;
+  display: none;
+}
+
+.ico-video:hover {
+  background-image: url(../img/ico/video-.png);
+}
+
+.ico-desc {
+  margin-left: 56px;
+}
+
+
+/* Слайдер */
+.waterproof .slick-arrow {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -57px;
+  right: 0;
+  border: none;
+  font-size: 0;
+  background: url(../img/ico/arrow.jpg) 0 0 no-repeat;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  cursor: pointer;
+
+  @include under540 {
+    top: -53px;
+  }
+}
+
+.waterproof .slick-arrow:hover,
+.waterproof .slick-arrow:focus {
+  background: url(../img/ico/arrow-.jpg) 0 0 no-repeat;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.waterproof .slick-arrow.slick-prev {
+  right: 40px;
+}
+
+.waterproof .slick-arrow.slick-next {
+  -webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
+
+
+
+
+

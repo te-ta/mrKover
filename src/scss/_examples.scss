@@ -1,0 +1,31 @@
+.examples {
+  margin-top: 96px;
+  text-align: center;
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__slider {
+    position: relative;
+    margin: 32px -8px 0;
+  }
+
+  &__item {
+    margin: 0 8px;
+  }
+
+  &__img {
+    position: relative; 
+    min-height: 224px;
+  }
+
+  &__desc {
+    margin: 16px 0;
+  }
+
+  &__btn {
+    margin-top: 48px;
+  }
+}
+

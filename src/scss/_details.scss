@@ -1,0 +1,116 @@
+.details {
+  margin-top: 96px;
+
+  @include under640 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  &__left {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    padding: 96px 144px 96px 0;
+    border-top: 8px solid $light-main;
+    background-color: $color-main;
+
+    @include under980 {
+      align-items: center;
+      padding: 96px 0;
+    }
+
+    @include under640 {
+      width: 100%;
+      border: none;
+    }
+  }
+
+  &__right {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    border-top: 8px solid $color-gray;
+    background-color: $color-dark;
+
+    @include under640 {
+      width: 100%;
+      border: none;
+    }
+  }
+
+  &__wrap {
+    color: $color-white;
+  }
+
+  &__wrap + &__wrap {
+    margin-top: 32px;
+  }
+
+  &__ico {
+    min-width: 58px;
+    height: 58px;
+  }
+
+  &__ico-delivery {
+    background: url(../img/ico/delivery.png) center no-repeat;
+  }
+
+  &__ico-certificate {
+    background: url(../img/ico/certificate.png) center no-repeat;
+  }
+
+  &__ico-warranty {
+    background: url(../img/ico/warranty.png) center no-repeat;
+  }
+
+  &__item {
+    margin: 16px 0 0 16px;
+  }
+
+  &__desc {
+    width: 180px;
+  }
+
+  &__box {
+    margin: 0 32px 0 -16px;
+    text-transform: none;
+    text-align: left;
+
+    @include under740 {
+      margin-right: 16px;
+    }
+
+    @include under640 {
+      margin: 32px 32px -16px;
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    display: block;
+  }
+
+  &__text:first-child {
+    font-size: 20px;
+  }
+  
+  &__text + &__text {
+    margin-top: 16px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $color-dark;
+  }
+}
+
+
+

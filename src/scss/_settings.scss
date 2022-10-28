@@ -1,0 +1,55 @@
+
+$color-dark: #3C3C3C;
+$color-white: #fff;
+$color-gray: #8A8A8A;
+$color-main: rgba(135, 195, 0, 1);
+$color-second: #E00045; // #2884B5;
+
+$light-main: #B7DB67;
+$light-gray: #bbb;
+
+$opacity-dark: rgba(60, 60, 60, 0.8); //#3C3C3CCC;
+$opacity-white: rgba(255, 255, 255, 0.9);
+$opacity-main: rgba(135, 195, 0, 0.8); //#87C300CC;
+$opacity-second: rgba(224, 0, 69, 0.8); // #E00045cc; // #2884B5cc;
+$opacity-red: rgba(255, 0, 0, 0.2); 
+
+$title-big: 'Roboto', sans-serif;
+$title: 'Roboto Slab', serif;
+$text: 'Roboto Condensed', sans-serif;
+
+@mixin under1240 {
+  @media (max-width: (1240px)) {
+    @content;
+  }
+}
+
+@mixin under980 {
+  @media (max-width: (980px)) { 
+    @content;
+  }
+}
+
+@mixin under740 {
+  @media (max-width: (740px)) { 
+    @content;
+  }
+}
+
+@mixin under640 {
+  @media (max-width: (640px)) { 
+    @content;
+  }
+}
+
+@mixin under540 {
+  @media (max-width: (540px)) { 
+    @content;
+  }
+}
+
+@mixin xsHeight {
+  @media (max-height: (440px)) { 
+    @content;
+  }
+}

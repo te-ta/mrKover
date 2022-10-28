@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Грязезащитные влаговпитывающие ковры для помещений любого назначения. Любого размера, цвета, нанесение текста или рисунка. На резиновой основе или полностью резиновые. Произведено в Бельгии. Доставка по РФ. Дезинфицирующие антибактериальные коврики.">
+  <title>Все виды грязезащитных и влагоудерживающих ковров</title>
+  <link rel="icon" href="img/ico/favicon.gif" type="image/gif">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="form__container">
+		<div class="callback__wrapper">
+      <div class="form__container_close">&#215;</div>
+      <form class="callback__form" action="php/mail.php" method="POST">
+				<input type="hidden" name="project_name" value="MrKover">
+				<input type="hidden" name="admin_email" value="sale@mrkover.ru">
+				<input type="hidden" name="form_subject" value="Форма обратного звонка">
+        <div class="callback__title">Обратный звонок</div>
+        <input class="callback__input" type="text" name="Имя" placeholder="Ваше имя">
+				<input class="callback__input" type="tel" name="Телефон" placeholder="+7 (___) ___-____">
+				<input class="callback__input callback__email" type="text" name="email" id="email" placeholder="_@_._">
+				<button class="btn form__btn" type="submit" aria-label="Отправить">Отправить</button>
+        <div class="callback__desc">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
+      </form>
+		</div>
+	</div>
+  <header class="header">
+    <div class="container flex header__container">
+      <input type="checkbox" class="burger__checkbox" id="checkbox">
+			<label for="checkbox" class="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </label>
+      <nav class="header__menu">
+        <ul class="header__list flex">
+          <li><a href="#about" class="header__link link header__link_first">О нас</a></li>
+          <li><a href="#waterproof" class="header__link link">Грязезащитные</a></li>
+          <li><a href="#special" class="header__link link">Специальные</a></li>
+          <li><a href="#details" class="header__link link">Аренда</a></li>
+          <li><a href="#contacts" class="header__link link">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="header__tel">
+        <li><a href="tel:+79876543210" class="link">+7(987) 654-32-10</a></li>
+        <li><a href="tel:+79990000000" class="link">+7(999) 000-00-00</a></li>
+      </ul> 
+      <button class="callback header__btn btn" type="submit" aria-label="Заказать звонок"></button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="first">
+      <div class="container flex first__container">
+        <div class="col-left"></div>  
+        <div class="first__right col-right">
+          <a href="#details" class="first__box box">
+            <span class="first__subtitle">Купить или взять в аренду</span>
+            <h1 class="first__title">Ковры</h1>
+            <h2 class="first__desc">Грязезащитные влаговпитывающие 
+              ковры для помещений любого назначения. Коврики и дорожки для бизнеса. Придверные коврики.
+            </h2>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container flex about__container flex">
+        <div class="about__left col-left">
+          <h3 class="about__title">Произведено в Бельгии на собственных производственных площадках.</h3>
+          <p class="about__desc">Наша компания уже более 10 лет является официальным дистрибьютором продукции Mountville Mills в РФ. Нашими заказчиками являются крупнейшие корпорации, госпредприятия, банки, торговые центры, малый и средний бизнес.</p>
+          <p class="about__desc">Мы изготавливаем коврики любого размера, цвета или с нанесением любого стиля или рисунка на полотно ковра, причем, в зависимости от требований, могут предлагаться различные решения, стандартные печатные ковры (окрашиваются на специальном принтере) или люксовые ковры созданные тафтинговым методом.</p>
+          <button class="callback about__btn btn" type="submit" aria-label="Узнать больше">Узнать больше</button>
+        </div>  
+        <div class="about__right col-right flex">
+          <div class="about__img">
+            <img src="img/about-one.jpg" class="img" alt="Коврики с логотипом, придверные, на резиновой основе">
+          </div>
+          <div class="about__img">
+            <img src="img/about-two.jpg" class="img" alt="Грязезащитные и влаговпитывающие коврики">
+          </div>     
+        </div>      
+      </div>
+    </section>
+    <section class="about-mat">
+      <div class="about-mat__container container flex">
+        <a href="#waterproof" class="about-mat__wrap box-green link flex">
+          <div class="about-mat__ico ico about-mat__pile"></div>
+          <div class="about-mat__text"> 
+              <h3 class="about-mat__title">Ворсовые ковры</h3>
+              <p class="about-mat__desc">Коврики с грязезащитой отлично собирают влагу с обуви и надежно удерживают ее внутри.</p>
+          </div>
+        </a>
+        <a href="#rubber" class="about-mat__wrap link flex">
+          <div class="about-mat__ico ico about-mat__rubber"></div>
+          <div class="about-mat__text">
+            <h3 class="about-mat__title">Резиновые ковры</h3>
+            <p class="about-mat__desc">Полностью резиновые и прорезиненные входные и уличные ковры, коврики диэлектрические.</p>
+          </div>
+        </a>
+        <a href="#special" class="about-mat__wrap link flex">
+          <div class="about-mat__ico ico about-mat__special"></div>
+          <div class="about-mat__text">
+            <h3 class="about-mat__title">Специальные</h3>
+            <p class="about-mat__desc">Коврики на тонкой каучуковой основе, ковры для мероприятий, промо коврики, коврики в автомобиль и другие.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="waterproof" id="waterproof">
+      <div class="flex">
+        <div class="col-left"></div> 
+        <div class="col-right waterproof__heading-wrap">
+        <h4 class="waterproof__heading">Грязезащитные</h4>
+        </div>
+      </div>
+      <div class="container waterproof__container">
+        <div class="waterproof__slider">
+          
+          <div class="waterproof__item flex">
+            <div class="col-left waterproof__img">
+              <img src="img/model/sanitize.jpg" class="img" alt="Ковер санитайзер. Дезинфицирующий коврик.">
+            </div> 
+            <div class="waterproof__desc col-right flex">
+              <div class="waterproof__text">
+                <div class="waterproof__title">Дезинфицирующий коврик</div>  
+                <ul class="waterproof__list">
+                  <li class="waterproof__point">Сделан на основе ковра Colorstar.</li>
+                  <li class="waterproof__point">Выпускается в трех вариантах дизайна.</li>
+                  <li class="waterproof__point">Съемная вставка «sanitise here» служит в качестве брызговика и помогает удалить любую грязь или мусор с подошвы обуви. Чтобы жидкость могла достичь всей поверхности подошвы, под вставкой имеется резиновое основание «корытце».</li>
+                  <li class="waterproof__point">В комплекте с каждым ковриком имеется по одной вставке; дополнительные вставки выпускаются в упаковках по четыре штуки.</li>
+                  <li class="waterproof__point">Хорошо держит вставку и впитывает около 2,5л дезинфицирующего раствора (не входит в комплект).</li>
+                  <li class="waterproof__point">Совместим с большинством дезинфицирующих/антибактериальных растворов. Лучше всего работает с четвертичными дезинфицирующими растворами или перекисью водорода. См.инструкции по установке и рекомендуемым пропорциям разведения.</li>
+                </ul>
+                <p>Возможны надписи на русском или любом другом языке.</p>
+              </div>
+              <div class="flex waterproof__ico-wrap">
+                <button class="waterproof__ico ico ico-order callback flex" type="submit" aria-label="Заказать ковер"><span class="ico-desc">Заказать</span></button>
+                <div class="waterproof__ico ico ico-video flex"><span class="ico-desc">Видео</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="waterproof__item flex">
+            <div class="col-left waterproof__img">
+              <img src="img/model/karaat.jpg" class="img" alt="Нейлоновый ворсовый ковер Karaat">
+            </div> 
+            <div class="waterproof__desc col-right flex">
+              <div class="waterproof__text">
+                <div class="waterproof__title">Нейлоновый ковер Karaat</div>  
+                <ul class="waterproof__list">
+                  <li class="waterproof__point">Нейлоновое волокно, окрашенное по технологии SD, обеспечивает превосходную устойчивость цвета.</li>
+                  <li class="waterproof__point">Основа из 100% нитриловой резины EXS не скручивается и не трескается в любую погоду.</li>
+                  <li class="waterproof__point">Подложка патентованный материал Freudenberg LUTRADUR не изнашивается и обеспечивает надежное сцепление ковра и резинового основания.</li>
+                  <li class="waterproof__point">Термически стабилизированное нейлоновое волокно с технологией High Twist устойчиво к разрушению и обеспечивает удержание грязи на ковре.</li>
+                  <li class="waterproof__point">Устойчивость к выцветанию и УФ-лучам.</li>
+                </ul>
+                <ul class="waterproof__list">
+                  <li class="waterproof__point-row">Удерживает:</li>
+                  <li class="waterproof__point-row">воды 1,703 л/м&#178;</li>
+                  <li class="waterproof__point-row">грязи 1,430 кг/м&#178;</li>
+                </ul>
+                <p class="waterproof__list">Основание ковров: гладкое или рельефное.<br>Резина: нитрил EXS (край ковра 2,5мм., центр 1,5мм).<br>Доступна опция усиленного 3 мм резинового основания.</p>
+                <ul class="waterproof__list">
+                  <li class="waterproof__point-row">Вес ковра:  0,9 кг/м&#178;</li>
+                  <li  class="waterproof__point-row">Общий вес: 2,82 кг/м&#178;</li>
+                </ul>
+                <ul class="waterproof__size notdisplay">
+                  <li>Стандартные размеры (см):</li>
+                  <li>60 x 85</li><li>75 x 85</li><li>85 x 115</li>
+                  <li>85 x 150</li><li>85 x 300</li><li>115 x 180</li>
+                  <li>115 x 200</li><li>115 x 240</li><li>115 x 250</li>
+                  <li>115 x 300</li><li>150 x 200</li><li>150 x 240</li>
+                  <li>150 x 250</li><li>150 x 300</li>
+                  <li>Возможно изготовление под ваши размеры (макс. 200х550)</li>
+                </ul>
+                <ul class="waterproof__color notdisplay">
+                </ul>
+              </div>
+              <div class="flex waterproof__ico-wrap">
+                <button class="waterproof__ico ico ico-order callback flex" type="submit" aria-label="Заказать ковер"><span class="ico-desc">Заказать</span></button>
+                <div class="waterproof__ico ico ico-size flex"><span class="ico-desc">Размеры</span></div>
+                <div class="waterproof__ico ico ico-color flex karaat"><span class="ico-desc">Цвета</span></div>
+                <div class="waterproof__ico ico ico-video flex"><span class="ico-desc">Видео</span></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="waterproof__item flex">
+            <div class="col-left waterproof__img">
+              <img src="img/model/microluxx.jpg" class="img" alt="Влаговпитывающий ковер Microluxx">
+            </div>  
+            <div class="waterproof__desc col-right flex">
+              <div class="waterproof__text">
+                <div class="waterproof__title">Microluxx отлично впитывает</div>  
+                <ul class="waterproof__list">
+                  <li class="waterproof__point">Нейлоновое волокно, окрашенное по технологии SD, смешанное с высококачественным волокном Microluxx идеально работают вместе и обеспечивают превосходную устойчивость цвета.</li>
+                  <li class="waterproof__point">Основа из 100% нитриловой резины EXS не скручивается и не трескается в любую погоду.</li>
+                  <li class="waterproof__point">Подложка патентованный материал Freudenberg LUTRADUR не изнашивается и обеспечивает надежное сцепление ковра и резинового основания.</li>
+                  <li class="waterproof__point">Термически стабилизированное нейлоновое волокно с технологией High Twist устойчиво к разрушению и обеспечивает удержание грязи на ковре.</li>
+                  <li class="waterproof__point">Устойчивость к выцветанию и УФ-лучам.</li>
+                </ul>
+                <ul class="waterproof__list">
+                  <li class="waterproof__point-row">Впитывает в 2.5 раза больше влаги чем обычные ковры:<br></li>
+                  <li class="waterproof__point-row">воды 4,3 л/м&#178;</li>
+                  <li class="waterproof__point-row">грязи 2,392 кг/м&#178;</li>
+                </ul>
+                <p class="waterproof__list">Основание ковров: гладкое или рельефное.<br>Резина: нитрил EXS (край ковра 2,5мм., центр 1,5мм).<br>Доступна опция усиленного 3 мм резинового основания.</p>
+                <ul class="waterproof__list">
+                  <li class="waterproof__point-row">Вес ковра:  1,112 кг/м&#178;</li>
+                   <li  class="waterproof__point-row">Общий вес: 3,112 кг/м&#178;</li>
+                </ul>
+                <ul class="waterproof__size notdisplay">
+                  <li>Стандартные размеры (см):</li>
+                  <li>60 x 85</li><li>75 x 85</li><li>85 x 115</li>
+                  <li>85 x 150</li><li>85 x 300</li><li>115 x 180</li>
+                  <li>115 x 200</li><li>115 x 240</li><li>115 x 250</li>
+                  <li>115 x 300</li><li>150 x 200</li><li>150 x 240</li>
+                  <li>150 x 250</li><li>150 x 300</li>
+                  <li>Возможно изготовление под ваши размеры (макс. 200х550)</li>
+                </ul>
+                <ul class="waterproof__color notdisplay">
+                </ul>
+              </div>
+              <div class="flex waterproof__ico-wrap">
+                <button class="waterproof__ico ico ico-order callback flex" type="submit" aria-label="Заказать ковер"><span class="ico-desc">Заказать</span></button>
+                <div class="waterproof__ico ico ico-size flex"><span class="ico-desc">Размеры</span></div>
+                <div class="waterproof__ico ico ico-color flex microluxx"><span class="ico-desc">Цвета</span></div>
+                <div class="waterproof__ico ico ico-video flex"><span class="ico-desc">Видео</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="waterproof__item flex">
+            <div class="col-left waterproof__img">
+              <img src="img/model/colorstar.jpg" class="img" alt="Грязезащитный ковер Colorstar">
+            </div>  
+            <div class="waterproof__desc col-right flex">
+              <div class="waterproof__text">
+                <div class="waterproof__title">Colorstar с возможностью HD&nbsp;печати</div>  
+                <ul class="waterproof__list">
+                  <li class="waterproof__point">Нейлоновое волокно, окрашенное по технологии SD, обеспечивает превосходную устойчивость цвета.</li>
+                  <li class="waterproof__point">Основа из 100% нитриловой резины EXS не скручивается и не трескается в любую погоду.</li>
+                  <li class="waterproof__point">Подложка патентованный материал Freudenberg LUTRADUR не изнашивается и обеспечивает надежное сцепление ковра и резинового основания.</li>
+                  <li class="waterproof__point">Термически стабилизированное нейлоновое волокно с технологией High Twist устойчиво к разрушению и обеспечивает удержание грязи на ковре.</li>
+                  <li class="waterproof__point">Устойчивость к выцветанию и УФ-лучам.</li>
+                </ul>
+                <ul class="waterproof__list">
+                  <li class="waterproof__point-row">Удерживает:</li>
+                  <li class="waterproof__point-row">воды 1,703 л/м&#178;</li>
+                  <li class="waterproof__point-row">грязи 1,430 кг/м&#178;</li>
+                </ul>
+                <p class="waterproof__list">Основание ковров: гладкое или рельефное.<br>Доступна опция усиленного 3 мм резинового основания.<br>Высококачественная печать любого рисунка.</p>
+                <ul class="waterproof__list">
+                  <li class="waterproof__point-row">Вес ковра:  0,9 кг/м&#178;</li>
+                   <li  class="waterproof__point-row">Общий вес: 2,9 кг/м&#178;</li>
+                </ul>
+                <ul class="waterproof__size notdisplay">
+                  <li>Стандартные размеры (см):</li>
+                  <li>60 x 85</li><li>75 x 85</li><li>85 x 115</li>
+                  <li>85 x 150</li><li>85 x 300</li><li>115 x 180</li>
+                  <li>115 x 200</li><li>115 x 240</li><li>115 x 250</li>
+                  <li>115 x 300</li><li>150 x 200</li><li>150 x 240</li>
+                  <li>150 x 250</li><li>150 x 300</li>
+                  <li>Возможно изготовление под ваши размеры (макс. 200х550)</li>
+                </ul>
+                <ul class="waterproof__color notdisplay">
+                </ul>
+              </div>
+              <div class="flex waterproof__ico-wrap">
+                <button class="waterproof__ico ico ico-order callback flex" type="submit" aria-label="Заказать ковер"><span class="ico-desc">Заказать</span></button>
+                <div class="waterproof__ico ico ico-size flex"><span class="ico-desc">Размеры</span></div>
+                <div class="waterproof__ico ico ico-color flex colorstar"><span class="ico-desc">Цвета</span></div>
+                <div class="waterproof__ico ico ico-video flex"><span class="ico-desc">Видео</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="waterproof__item flex">
+            <div class="col-left waterproof__img">
+              <img src="img/model/optigraphic.jpg" class="img" alt="Bartex Optigraphic тафтинговый">
+            </div>  
+            <div class="waterproof__desc col-right flex">
+              <div class="waterproof__text">
+                <div class="waterproof__title">Тафтинговый ковер Bartex Optigraphic</div>  
+                <ul class="waterproof__list">
+                  <li class="waterproof__point">Нейлоновое волокно, окрашенное по технологии SD, обеспечивает превосходную устойчивость цвета.</li>
+                  <li class="waterproof__point">Основа из 100% нитриловой резины EXS не скручивается и не трескается в любую погоду.</li>
+                  <li class="waterproof__point">Подложка LUTRADUR не изнашивается и обеспечивает надежное сцепление ковра и резинового основания.</li>
+                  <li class="waterproof__point">Термически стабилизированное нейлоновое волокно с технологией High Twist устойчиво к разрушению и обеспечивает удержание грязи на ковре.</li>
+                  <li class="waterproof__point">Устойчивость к выцветанию и УФ-лучам.</li>
+                </ul>
+                <ul class="waterproof__list">
+                  <li class="waterproof__point-row">Удерживает:</li>
+                  <li class="waterproof__point-row">воды 2,075 л/м&#178;</li>
+                  <li class="waterproof__point-row">грязи 1,745 кг/м&#178;</li>
+                </ul>
+                <p class="waterproof__list">Основание ковров: гладкое или рельефное.<br>Доступна опция усиленного резинового основания.<br>Тафтинговая технология производства.</p>
+                <ul class="waterproof__list">
+                  <li class="waterproof__point-row">Вес ковра:  1 кг/м&#178;</li>
+                  <li  class="waterproof__point-row">Общий вес: 3,2 кг/м&#178;</li>
+                </ul>
+                <ul class="waterproof__size notdisplay">
+                  <li>Стандартные размеры (см):</li>
+                  <li>60 x 85</li><li>75 x 85</li><li>80 x 120</li>
+                  <li>85 x 150</li><li>85 x 300</li><li>120 x 180</li>
+                  <li>120 x 200</li><li>120 x 240</li><li>150 x 200</li>
+                  <li>150 x 250</li><li>150 x 300</li>
+                  <li>Возможно изготовление под ваши размеры (макс. 200х550 или 200x1000)</li>
+                </ul>
+                <ul class="waterproof__color notdisplay">
+                </ul>
+              </div>
+              <div class="flex waterproof__ico-wrap">
+                <button class="waterproof__ico ico ico-order callback flex" type="submit" aria-label="Заказать ковер"><span class="ico-desc">Заказать</span></button>
+                <div class="waterproof__ico ico ico-size flex"><span class="ico-desc">Размеры</span></div>
+                <div class="waterproof__ico ico ico-color flex bartex"><span class="ico-desc">Цвета</span></div>
+                <div class="waterproof__ico ico ico-video flex"><span class="ico-desc">Видео</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="waterproof__item flex">
+            <div class="col-left waterproof__img">
+              <img src="img/model/whaterhog.jpg" class="img" alt="Whaterhog ковер уличный и внутренний">
+            </div>  
+            <div class="waterproof__desc col-right flex">
+              <div class="waterproof__text">
+                <div class="waterproof__title">Многофункциональный Whaterhog</div>  
+                <ul class="waterproof__list">
+                  <li class="waterproof__point">Благодаря прочной антистатической ПЭТ-поверхности ковер подходит для использования как внутри, так и снаружи помещения, поскольку быстро высыхает.</li>
+                  <li class="waterproof__point">Уникальная рельефная поверхность ковра Waterhog с эффектом “губки” способствует высокой эффективности и длительному сроку службы ковра.</li>
+                  <li class="waterproof__point">Края ковра спроектированы по принципу “дамбы”, для удержания воды и грязи на ковре, не допуская их попадания на пол.</li>
+                  <li class="waterproof__point">Рельефная поверхность ковра захватывает и удерживает грязь и влагу ниже уровня обуви, оставляя пол чистым.</li>
+                  <li class="waterproof__point">Окрашивание по технологии Colorfast для устойчивости к выцветанию.</li>
+                </ul>
+                <p class="waterproof__list">Окрашенное по технологии SD ПЭТ-волокно на 100% произведено из переработанных пластиковых бутылок.<br>Основа из нитриловой резины без использования ПВХ.</p>
+                <ul class="waterproof__list">
+                  <li class="waterproof__point-row">Вес ковра:  0,82 кг/м&#178;</li>
+                   <li  class="waterproof__point-row">Общий вес: 2,8-4 кг/м&#178;</li>
+                </ul>
+                <ul class="waterproof__size notdisplay">
+                  <li>Стандартные размеры (см):</li>
+                  <li>60 x 90</li><li>90 x 120</li><li>90 х 150</li>
+                  <li>90 х 295</li><li>115 x 175</li><li>115 x 240</li>
+                  <li>175 x 360</li><li>180 x 250</li><li>180 x 2042</li>
+                  <li>Изготовление под не стандартные размеры не возможно</li>
+                </ul>
+                <ul class="waterproof__color notdisplay">
+                </ul>
+              </div>
+              <div class="flex waterproof__ico-wrap">
+                <button class="waterproof__ico ico ico-order callback flex" type="submit" aria-label="Заказать ковер"><span class="ico-desc">Заказать</span></button>
+                <div class="waterproof__ico ico ico-size flex"><span class="ico-desc">Размеры</span></div>
+                <div class="waterproof__ico ico ico-color flex whaterhog"><span class="ico-desc">Цвета</span></div>
+                <div class="waterproof__ico ico ico-video flex"><span class="ico-desc">Видео</span></div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </section>
+    <section class="special" id="special">
+      <div class="flex">
+        <h4 class="special__heading col-left">Специальные</h4>
+        <div class="col-right"></div>  
+      </div>
+      <div class="container flex special__container">
+        <div class="special__item col-left">
+          <img src="img/model/poster.jpg" class="img special__img" alt="Poster mats тонкий ковер с высококачественной печатью">
+          <div class="special__text">
+            <p class="special__title">С фотопечатью</p>
+            <p class="special__subtitle">Poster mats (HD print)</p>
+            <p class="special__desc">Идеальный продукт для вашего маркетинга и неповторимая деталь фирменного стиля.
+              <br>Фотографическое качество печати HD.
+              <br>Резиновое нескользящее основание.
+              <br>Тончайшая лицевая сторона из полиэстеровых нитей.
+              <br>Толщина изделия 1,4 мм.
+              <br>Размер ковра по вашему выбору (макс. 200х550см).</p>
+          </div>
+        </div>  
+        <div class="special__item col-right">
+          <img src="img/model/automotive.jpg" class="img special__img" alt="Коврики для салона авто машины Waterhog automotive">
+          <div class="special__text">
+            <p class="special__title">Коврики в автомобиль</p>
+            <p class="special__subtitle">Waterhog automotive</p>
+            <p class="special__desc">Рельефная поверхность ковра c усиленным поглощением влаги и грязи по принципу “губки”.
+              <br>Ковер спроектирован так, чтобы удерживать воду и грязь, не допуская их попадания на пол.
+              <br>Окрашенное по технологии SD ПЭТ-волокно на 100% произведено из переработанных пластиковых бутылок, быстро высыхает и надолго сохраняет свой цвет.
+              <br>Вырезаны по размерам большинства популярных моделей автомобилей.</p>
+          </div>
+        </div>  
+        <div class="special__item col-left">
+          <img src="img/model/burex.jpg" class="img special__img" alt="Burex mats - защитные коврики для торговых залов и магазинов">
+          <div class="special__text">
+            <p class="special__title">Промо-коврики</p>
+            <p class="special__subtitle">Burex mats</p>
+            <p class="special__desc">Промо-коврики для использования в торговом зале.
+              <br>Не скользят благодаря основанию из тонкой резины.
+              <br>Можно чистить в бытовых стиральных машинах и пылесосом.
+              <br>Можно нанести любую рекламу или сообщение фотокачества HD с неограниченной палитрой цветов.
+              <br>Идеально защищает матрас в торговом зале от загрязнения обувью.</p>
+          </div>
+        </div>     
+        <div class="special__item col-right">
+          <img src="img/model/optibrush.jpg" class="img special__img" alt="Bartex Optibrush уличный коврик">
+          <div class="special__text">
+            <p class="special__title">Внешние коврики</p>
+            <p class="special__subtitle">Bartex Optibrush</p>
+            <p class="special__desc">Нейлоновый ковер-щетка, идеален для использования вне помещений. Устойчив к выцветанию и УФ лучам, отбеливателям и другой химии. Отличная впитываемость.
+              <br>5 стандартных цветов и возможность изготовления ковра по своему дизайну (не более двух цветов на один макет).
+              <br>Толщина изделия 3 мм. 
+              <br>Вес ворсовой части ковра - 1,3 кг/м&#178;. Общий вес - 5,2 кг/м&#178;
+              <br>Максимальные размеры 240х550см или 200х1000см</p>
+          </div>
+        </div>  
+        <div class="special__item col-left" id="rubber">
+          <img src="img/model/superscrape.jpg" class="img special__img" alt="Грязезащитные резиновые ковры Complete comfort и Superscrape">
+           <div class="special__text">
+            <p class="special__title">Полностью из резины</p>
+            <p class="special__subtitle">Complete comfort, Superscrape</p>
+            <p class="special__desc">Полностью резиновые ковры подходят для использования вне помещений, а также для сухих, влажных и скользких зон. Легко чистятся. Резина устойчива к воздействию химии и масел.
+              <br>Возможно нанесения любого знака, символа или сообщения, с указанием направления выхода, предупреждения или текста (18х30см в правом нижнем углу).
+              <br>Толщина изделия 3мм. Вес ковра 3,6 кг/м&#178;.</p>
+          </div>
+        </div>  
+        <button class="callback special__item col-right box-green flex link special__title" type="submit" aria-label="Узнать больше о коврах">Узнать больше</button>         
+      </div>
+    </section>
+    <section class="details flex" id="details">
+      <div class="details__left flex">
+        <div class="details__wrap flex">
+          <div class="details__ico ico  details__ico-delivery"></div>
+          <div class="details__item">
+            <h3 class="details__title">Доставка</h3>
+            <p class="details__desc">транспортной компанией по всей России</p>
+          </div>
+        </div>
+        <div class="details__wrap flex">
+          <div class="details__ico ico details__ico-certificate"></div>
+          <div class="details__item">
+            <h3 class="details__title">Сертификаты</h3>
+            <p class="details__desc">вся наша продукция имеет <a href="pdf/certificate.pdf" class="link details__link">сертификаты качества и пожарной безопасности</a></p>
+          </div>
+        </div>
+        <div class="details__wrap flex">
+          <div class="details__ico ico details__ico-warranty"></div>
+          <div class="details__item">
+            <h3 class="details__title">Гарантия</h3>
+            <p class="details__desc">качества на все модели ковров</p>
+          </div>
+        </div>
+      </div>  
+      <div class="details__right flex">
+        <button class="callback details__box box" type="submit" aria-label="Заказать звонок">
+          <span class="details__text">Купить или взять в аренду ковер очень просто - оставьте заявку или свяжитесь с нами любым удобным для вас способом!</span>
+          <span class="details__text">Мы поможем найти наиболее подходящее ковровое решение для вашего бизнеса, сориентируем в многообразии моделей, расскажем о новинках.</span>
+          <span class="details__text">Ковры в аренду предоставляются без залога. Вы полностью управляете стоимостью обслуживания и оплачиваете только их замену.</span>
+        </button>
+      </div>
+    </section>
+    <section class="examples">
+      <h3 class="examples__title">Примеры наших ковров</h3>
+      <div class="container examples__container">
+        <div class="examples__slider">
+          <div class="examples__item">
+            <div class="examples__img"><img src="img/examples/motorcycle.jpg" class="img" alt="Ковер для салона"></div>
+            <p class="examples__desc">Противоскользящий фирменный. Мотомагазин.</p>
+          </div> 
+          <div class="examples__item">
+            <div class="examples__img"><img src="img/examples/raketa.jpg" class="img" alt="Грязезащитный ворсовый с логотипом"></div>
+            <p class="examples__desc">Хоккейный клуб «Ракета». Коврик в раздевалку.</p>
+          </div> 
+          <div class="examples__item">
+            <div class="examples__img"><img src="img/examples/coffee.jpg" class="img" alt="Ковер с надписями в кофейне"></div>
+            <p class="examples__desc">Информационный коврик для кафе.</p>
+          </div> 
+          <div class="examples__item">
+            <div class="examples__img"><img src="img/examples/wshoes.jpg" class="img" alt="Грязезащитный цветной коврик"></div>
+            <p class="examples__desc">Брендовый для обувного магазина.</p>
+          </div>
+          <div class="examples__item">
+            <div class="examples__img"><img src="img/examples/marmalade.jpg" class="img" alt="Грязезащитный цветной коврик"></div>
+            <p class="examples__desc">Насыщенный красками ковер.</p>
+          </div>
+          <div class="examples__item">
+            <div class="examples__img"><img src="img/examples/shell.jpg" class="img" alt="Коврик Добро пожаловать в Shell"></div>
+            <p class="examples__desc">Входной коврик для Shell.</p>
+          </div>
+          <div class="examples__item">
+            <div class="examples__img"><img src="img/examples/luxury.jpg" class="img" alt="Грязезазитный коврик на ресепшен в отель"></div>
+            <p class="examples__desc">Грязезащитный ковер с лого на ресепшн.</p>
+          </div> 
+          <div class="examples__item">
+            <div class="examples__img"><img src="img/examples/tmat.jpg" class="img" alt="Коврик придверный цветной"></div>
+            <p class="examples__desc">Двухцветный Waterhog.</p>
+          </div>
+          <div class="examples__item">
+            <div class="examples__img"><img src="img/examples/vpetrov.jpg" class="img" alt="Коврик придверный цветной"></div>
+            <p class="examples__desc">Коврик для ХК Академия Петрова.</p>
+          </div> 
+        </div>
+        <button class="callback examples__btn btn" type="submit" aria-label="Заказать">Заказать</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contacts">
+    <div class="container flex footer__container">
+      <nav class="footer__menu">
+        <ul class="footer__list">
+          <li><a href="#about" class="footer__link link">О нас</a></li>
+          <li><a href="#waterproof" class="footer__link link">Грязезащитные</a></li>
+          <li><a href="#special" class="footer__link link">Специальные</a></li>
+          <li><a href="#details" class="footer__link link">Аренда</a></li>
+          <li><a href="#contacts" class="footer__link link">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="footer__contacts">
+        <li class="footer__tel"><a href="tel:+79857600998" class="link">+7(987) 654-32-10</a></li>
+        <li class="footer__tel"><a href="tel:+79253548954" class="link">+7(999) 000-00-00</a></li>
+        <li><a href="mailto:sale@mrkover.ru" class="link">sale@mrkover.ru</a></li>
+      </ul>
+      <button class="callback footer__btn btn" type="submit" aria-label="Заказать звонок">Заказать звонок</button>
+    </div>
+    <small class="footer__copyright">&copy; <a href="mrkover.ru" class="link">www.mrkover.ru</a>, <span class="year-now"></span>.
+		</small>
+  </footer>
+</body>
+</html>

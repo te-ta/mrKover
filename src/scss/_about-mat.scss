@@ -1,0 +1,84 @@
+.about-mat {
+
+  &__container {
+    margin-top: 32px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+    @include under740 {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+    }
+  }
+
+  &__wrap {
+    padding: 72px 32px;
+    max-width: 31%;
+
+    @include under1240 {
+      padding: 32px 16px; 
+    }
+
+    @include under980{
+      max-width: 33.33%;
+    }
+
+    @include under740 {
+      max-width: 50%;
+    }
+
+    @include under540 {
+      max-width: 100%;
+    }
+  }
+
+  &__wrap:nth-child(1) {
+    @include under740 {
+      min-width: 100%;
+    }
+  }
+
+  &__ico {
+    min-width: 52px;
+    height: 52px;
+    -webkit-transition: background-image 0.8s;
+    -o-transition: background-image 0.8s;
+    transition: background-image 0.8s;
+  }
+
+  &__pile {
+    background: url(../img/ico/pile.png) center no-repeat;
+  }
+
+  &__wrap:hover &__pile{
+    background-image: url(../img/ico/pile-.png);
+  }
+
+  &__rubber {
+    background: url(../img/ico/rubber.png) center no-repeat;
+  }
+
+  &__wrap:hover &__rubber {
+    background-image: url(../img/ico/rubber-.png);
+  }
+  
+  &__special {
+    background: url(../img/ico/special.png) center no-repeat;
+  }
+  
+  &__wrap:hover &__special {
+    background-image: url(../img/ico/special-.png);
+  }
+
+  &__text {
+    margin: 13px 0 0 16px;
+  }
+
+  &__title {
+    font-family: $title;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
