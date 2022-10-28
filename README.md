@@ -1,2 +1,6 @@
-# mrKover
-Small site for entrance mats. HTML/CSS/jQuiery
+# mrKover - 
+Сайт-визитка для продажи грязезащитных и друхих специальных ковриков. te-ta.ru/mrkover
+
+
+
+
